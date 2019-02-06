@@ -13,6 +13,13 @@ $stmt->bind_param("i", $getId);
 $stmt->execute();
 $ospiteRisultato = $stmt->get_result()->fetch_all();
 
-var_dump($ospiteRisultato);
 
-?>
+foreach($ospiteRisultato as $key => $ospite):?>
+
+<h3>nome: <?php echo $ospite["1"];?></h3>
+<h3>cognome: <?php echo $ospite["2"];?></h3>
+<h3>data di nascita: <?php echo $ospite["3"];?></h3>
+<h3>tipo documento: <?php echo $ospite["4"];?></h3>
+<h3>numero documento: <?php echo $ospite["5"];?></h3>
+
+<?php endforeach; ?>
