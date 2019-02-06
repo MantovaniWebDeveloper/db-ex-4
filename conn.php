@@ -1,5 +1,5 @@
 <?php
-  // connesione al database
+  // connessione al database
   $servername = "localhost";
   $dbname = "schema";
   $user = "root";
