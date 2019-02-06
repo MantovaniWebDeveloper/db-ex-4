@@ -28,7 +28,8 @@
           <tr>
             <td class="text-center"><?php echo $prenotazione["id"]; ?></td>
             <td class="text-center"><?php echo $prenotazione["prenotazione_id"]; ?></td>
-            <td class="text-center"><?php echo $prenotazione["ospite_id"]; ?></td>
+            <!--gli inserisco nel link l'id del ospite -->
+            <td class="text-center"><a href="ospite.php?id=<?php  echo $prenotazione["ospite_id"]; ?>"><?php echo $prenotazione["ospite_id"]; ?></a></td>
           </tr>
           <?php endforeach; ?>
 
